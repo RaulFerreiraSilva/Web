@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+</head>
+<body>
+    <h1>Exemplo de repeat()</h1>
+    <p id="pedido"></p>
+    <p id="sabor"></p>
+    <p id="pizza"></p>
+    <p id="hamburguer"></p>
+
+</body>
+<script>
+    //DOM(Document Objetc Module)
+
+    let valor1 = parseInt(prompt("Digite a quantidade de sorvete"))
+    let sorvete = fazerSorvete(valor1)
+
+    document.getElementById("pedido").innerHTML = sorvete
+    
+    function fazerSorvete(quantidade){
+        return "🍨".repeat(quantidade)
+    }
+
+    let sabor = parseInt(prompt("Digite a quantidade de sabor"))
+    let suco = fazerSabor(sabor)
+
+    document.getElementById("sabor").innerHTML = suco
+    
+    function fazerSabor(vezes){
+        return "🧉".repeat(vezes)
+    }
+
+    let pizza = parseInt(prompt("Digite a quantidade de pizza"))
+    let pedaco = fazerPizza(pizza)
+
+    document.getElementById("pizza").innerHTML = pedaco
+    
+    function fazerPizza(forno){
+        return "🍕".repeat(forno)
+    }
+
+    let hamburguer = parseInt(prompt("Digite a quantidade de pizza"))
+    let pao = fazerHamburguer(hamburguer)
+
+    document.getElementById("hamburguer").innerHTML = pao
+    
+    function fazerHamburguer(chapa){
+        return "🍔".repeat(chapa)
+    }
+</script>
+</html>
