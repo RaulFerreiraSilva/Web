@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body onload="calculo1()">
+    <p id = "resultado1"></p>
+    <p id = "resultado2"></p>
+    <p id = "resultado3"></p>
+    <p id = "resultado4"></p>
+    <p id = "resultado5"></p>
+    <p id = "resultado6"></p>
+
+</body>
+<script>
+    function calculo1(){
+        let x = 2
+        let y = 5
+        let z = 15
+        
+        document.getElementById("resultado1").innerHTML = ` O resultado calculo é ${x + y - z} do exemplo 1 `
+        document.getElementById("resultado2").innerHTML = ` O resultado calculo é ${x/y} do exemplo 1 `
+        document.getElementById("resultado3").innerHTML = ` O resultado calculo é ${x*y} do exemplo 1 `
+        document.getElementById("resultado4").innerHTML = ` O resultado calculo é ${(x*y)+(z/y)} do exemplo 1 `
+        document.getElementById("resultado5").innerHTML = ` O resultado calculo é ${z/y} do exemplo 1 `
+        document.getElementById("resultado6").innerHTML = ` O resultado calculo é ${z%y} do exemplo 1 `
+    }
+</script>
+</html>
