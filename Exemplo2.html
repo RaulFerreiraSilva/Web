@@ -47,8 +47,8 @@
     let aumento = 1.15
     const anoAtual = 2022
 
-    for(ano = 1996; ano < anoAtual; ano++, aumento * 2 )
-        salario *= aumento
+    for(ano = 1996; ano < anoAtual; ano++, aumento = aumento * 2 )
+        salario *= (aumento + 1)
 
 
     document.getElementById("salario").innerHTML = salario
