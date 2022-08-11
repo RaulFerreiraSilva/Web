@@ -13,9 +13,56 @@
     <p id = "resultado4"></p>
     <p id = "resultado5"></p>
     <p id = "resultado6"></p>
+    <p id = "resultado7"></p>
+    <p id = "resultado8"></p>
+    <p id = "resultado9"></p>
+    <p id = "resultado10"></p>
+    <p id = "resultado11"></p>
+    <p id = "idade"></p>
+    <p id = "salario"></p> 
 
 </body>
 <script>
+    /*
+    anoNascimento = parseInt(prompt("Entre com seu ano de nascimento"))
+    
+
+    idade = calcularidade( anoAtual - anoNascimento)
+
+    
+    
+    function calcularidade(idade){  
+        return `Sua idade é ${idade}`
+    } */
+
+
+
+
+
+
+
+
+    let ano = 0
+    let salario = 1000
+    let aumento = 1.15
+    const anoAtual = 2022
+
+    for(ano = 1996; ano < anoAtual; ano++, aumento * 2 )
+        salario *= aumento
+
+
+    document.getElementById("salario").innerHTML = salario
+    
+    function calcularSalario(salario){  
+        return `Seu salario é ${salario}`
+    }
+
+
+
+
+
+
+
     function calculo1(){
         let x = 2
         let y = 5
@@ -27,6 +74,14 @@
         document.getElementById("resultado4").innerHTML = ` O resultado calculo é ${(x*y)+(z/y)} do exemplo 1 `
         document.getElementById("resultado5").innerHTML = ` O resultado calculo é ${z/y} do exemplo 1 `
         document.getElementById("resultado6").innerHTML = ` O resultado calculo é ${z%y} do exemplo 1 `
+        document.getElementById("resultado7").innerHTML = ` O resultado calculo é ${z/x} do exemplo 1 `
+        document.getElementById("resultado8").innerHTML = ` O resultado calculo é ${z%x} do exemplo 1 `
+        document.getElementById("resultado9").innerHTML = ` O resultado calculo é ${(x+y) * (x-z)/8} do exemplo 1 `
+        document.getElementById("resultado10").innerHTML = ` O resultado calculo é ${(3 * x) + (5 * y) + (0.5 * 4)} do exemplo 1 `
+        document.getElementById("resultado11").innerHTML = ` O resultado calculo é ${x = y + z} do exemplo 1 `
     }
+
+    
+
 </script>
 </html>
