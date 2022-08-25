@@ -8,19 +8,6 @@
 </head>
 <body onload="calculo1()">
     <p id = "resultado1"></p>
-    <p id = "resultado2"></p>
-    <p id = "resultado3"></p>
-    <p id = "resultado4"></p>
-    <p id = "resultado5"></p>
-    <p id = "resultado6"></p>
-    <p id = "resultado7"></p>
-    <p id = "resultado8"></p>
-    <p id = "resultado9"></p>
-    <p id = "resultado10"></p>
-    <p id = "resultado11"></p>
-    <p id = "idade"></p>
-    <p id = "salario"></p> 
-
 </body>
 <script>
     /*
@@ -42,28 +29,51 @@
 
 
 
-    let ano = 0
+    /*let ano = 0
     let salario = 1000
-    let aumento = 1.15
-    const anoAtual = 2022
+    let aumento = 0.015
+    const anoAtual = 2010
+    let lista = "----Relatorio----"
 
     for(ano = 1996; ano < anoAtual; ano++, aumento * 2 )
-        salario *= aumento
+        salario *= aumento + 1
 
 
     document.getElementById("salario").innerHTML = salario
     
-    function calcularSalario(salario){  
-        return `Seu salario é ${salario}`
+    lista = lista + "\n" + "ano: " + ano + " salario: " + salario.toLocaleString("pt-br", {style: 'decimal', minimunIntegerDigits:2})
+
+    alert(lista)*/
+
+    /*
+    let x = Number(prompt("Entre com um numero: "))
+    alert(aleatorio(x))
+
+    function aleatorio(valor){
+        let mensagem 
+        let num2 = Math.floor((Math.random() * 10) + 1)
+        alert(valor>num2)
+        if(valor>num2)
+            mensagem = "valor maior"
+        else
+            mensagem = "valor menor"
+
+        return mensagem
     }
+    */
+
+    /* let s1 = (prompt("Digite uma string"))
+    let s2 = (prompt("Digite outra string"))
+
+    if(s1.length > s2.length)
+        alert(`${s1} é maior que ${s2}`)
+    else
+        alert(`${s2} é maior que ${s2}`)*/
+    
 
 
 
-
-
-
-
-    function calculo1(){
+    /* function calculo1(){
         let x = 2
         let y = 5
         let z = 15
@@ -79,7 +89,7 @@
         document.getElementById("resultado9").innerHTML = ` O resultado calculo é ${(x+y) * (x-z)/8} do exemplo 1 `
         document.getElementById("resultado10").innerHTML = ` O resultado calculo é ${(3 * x) + (5 * y) + (0.5 * 4)} do exemplo 1 `
         document.getElementById("resultado11").innerHTML = ` O resultado calculo é ${x = y + z} do exemplo 1 `
-    }
+    } */
 
     
 
